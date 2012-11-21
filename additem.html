@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- Here is where the link leads to -->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="My first HTML document" />
+        <meta name="keywords" content="holiday, decorating" />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="user-scalable=yes, width=device-width" />
+        <title>The Holiday Spirit</title>
+        <link href="css/styles.css" rel="stylesheet">
+        <script type="text/javascript">
+            function sliderChange(val) {
+                document.getElementById('sliderStatus').innerHTML = val;
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>Decorating Supplies</h1>
+        </header>
+        <nav>
+            <a href="#" id="clearstoreddata">Clear All Decor</a>
+            <a href="#" id="displaydata">My Decor</a>
+            <a href="additem.html" id="addItem">Add Decor</a>
+        </nav>
+        <form action="" method="post" id="decorateForm">
+            <ul id="error"></ul>
+            <fieldset>
+                <legend>Choose Decorating Supplies</legend>
+                <ul>
+                    <li id="select"><label for="type">Choose Type</label><br /></li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Customize Supplies</legend>
+                <ul>
+                    <li id="balloon" style="display:none">Balloon Color Type
+                        <ul>
+                            <li><input type="radio" value="Metallic" id="metallic" name="balloonType" /><label for="metallic">Metallic</label></li>
+                            <li><input type="radio" value="Regular" id="regular" name="balloonType" /><label for="regular">Regular</label></li>
+                        </ul>
+                    </li>
+                    <li id="tinsel" style="display:none">Tinsel Colors
+                        <ul>
+                            <li><input type="radio" value="Multiple Colors" id="multiple" name="tinselType" /><label for="multiple">Multiple Colors</label></li>
+                            <li><input type="radio" value="Separate Colors" id="separate" name="tinselType" /><label for="separate">Separate Colors</label></li>
+                        </ul>
+                    </li>
+                    <li id="colors">Color(s)
+                        <ul>
+                            <li><input type="checkbox" value="Blue" id="blue" /><label for="blue">Blue</label></li>
+                            <li><input type="checkbox" value="Green" id="green" /><label for="green">Green</label></li>
+                            <li><input type="checkbox" value="Red" id="red" /><label for="red">Red</label></li>
+                            <li><input type="checkbox" value="Pink" id="pink" /><label for="pink">Pink</label></li>
+                            <li><input type="checkbox" value="Purple" id="purple" /><label for="purple">Purple</label></li>
+                            <li><input type="checkbox" value="Orange" id="orange" /><label for="orange">Orange</label></li>
+                            <li><input type="checkbox" value="Black" id="black" /><label for="black">Black</label></li>
+                            <li><input type="checkbox" value="White" id="white" /><label for="white">White</label></li>
+                            <li><input type="checkbox" value="Yellow" id="yellow" /><label for="yellow">Yellow</label></li>
+                            <li><input type="checkbox" value="Gray" id="gray" /><label for="gray">Gray</label></li>
+                        </ul>
+                    </li>
+                    <li id="packs">How Many Packs Do You Want?
+                        <ul>
+                            <li><input id="howMany" type="range" min="0" max="10" value="0" step="1" onChange="sliderChange(this.value)" /></li>
+                            Packs = <span id="sliderStatus">0</span>
+                        </ul>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Extra Information</legend>
+                <ul>
+                    <li><label for="occasion">Occasion:</label><input type="text" id="occasion"/></li>
+                    <li><label for="notes">Notes:</label><textarea id="notes"></textarea></li>
+                </ul>
+            </fieldset>
+            <input type="button" id="save" value="Add to Cart">
+        </form>
+        <script src="js/JSON.js" type="text/javascript"></script>
+        <script src="js/main.js" type="text/javascript"></script>
+        <script language="javascript">
+                var today = new Date();
+                document.write(today);
+        </script>
+    </body>
+</html>
