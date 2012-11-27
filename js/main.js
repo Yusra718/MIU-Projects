@@ -9,7 +9,7 @@ window.addEventListener("DOMContentLoaded", function() {
         return element
     };
 
-    var decorType = ["What would you like?", "Tinsel", "Lights", "Ceiling", "Balloons"],
+    var decorType = ["What would you like?", "Tinsel", "Lights", "Ceiling", "Balloons", "Banners"],
     	save = getId("save"),
     	displayData = getId("displaydata"),
     	clear = getId("clearstoreddata"),

@@ -8,8 +8,7 @@ var json = {
         "packs": 		["How many packs? : ", "8"]
 	},
 	"decor2": 	{
-		"dectype": 		["Type: ", "Balloons"],
-		"balloonType": 	["Balloon Type: ", "Metallic"],
+		"dectype": 		["Type: ", "Banners"],
 		"colors": 		["Color(s): ", ["Green","Orange","Gray"]],
 		"occasion": 	["Occasion: ", "Birthday"],
         "notes": 		["Notes: ", "Happy Birthday"],
@@ -60,8 +59,7 @@ var json = {
 		"packs": 		["How many packs? : ", "6"]
 	},
 	"decor9": 	{
-		"dectype": 		["Type: ", "Balloons"],
-		"balloonType": 	["Balloon Type: ", "Regular"],
+		"dectype": 		["Type: ", "Banners"],
 		"colors": 		["Color(s): ", ["Pink","Purple"]],
 		"occasion": 	["Occasion: ", "Sweet 16"],
 		"notes": 		["Notes: ", "Happy Sweet 16"],
@@ -105,15 +103,14 @@ var json = {
 		"packs": 		["How many packs? : ", "10"]
 	},
 	"decor15": 	{
-		"dectype": 		["Type: ", "Lights"],
+		"dectype": 		["Type: ", "Banners"],
 		"colors": 		["Color(s): ", ["White","Red"]],
 		"occasion": 	["Occasion: ", "Anniversary"],
 		"notes": 		["Notes: ", "Happy Anniversary"],
 		"packs": 		["How many packs? : ","1"]
 	},
 	"decor16": 	{
-		"dectype": 		["Type: ", "Tinsel"],
-		"tinselType": 	["Tinsel Type: ", "Multiple Colors"],
+		"dectype": 		["Type: ", "Banners"],
 		"colors": 		["Color(s): ", ["Blue","White"]],
 		"occasion": 	["Occasion: ", "Graduation"],
 		"notes": 		["Notes: ", "Congrats Grads"],
